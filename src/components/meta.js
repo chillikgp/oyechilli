@@ -64,6 +64,7 @@ export function renderMeta({
     <link rel="canonical" href="${canonicalUrl}">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="${siteConfig.seo.themeColor}">
+    ${siteConfig.verification?.google ? `<meta name="google-site-verification" content="${escapeHtml(siteConfig.verification.google)}">` : ""}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="${type}">

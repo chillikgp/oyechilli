@@ -113,6 +113,11 @@ export const siteConfig = {
     themeColor: "#FAF7F2",
     ogImage: "/assets/images/og-image.png",
     locale: "en_IN"
+  },
+
+  // Site Verification
+  verification: {
+    google: "avOekOxO2TkOFZAlL7kIVcFgci9fvDElJdopjKVcps8"
   }
 };
 

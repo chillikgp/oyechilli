@@ -171,6 +171,11 @@ function runTests() {
     assert(css.includes("prefers-reduced-motion"), "CSS missing prefers-reduced-motion media query");
     assert(css.includes(":focus-visible"), "CSS missing :focus-visible rules");
     assert(css.includes(".skip-link"), "CSS missing skip-link styles");
+
+    // Google Site Verification
+    const indexHtml = fs.readFileSync(path.join(DIST_DIR, "index.html"), "utf-8");
+    assert(indexHtml.includes('name="google-site-verification"'), "Missing google-site-verification tag in index.html");
+    assert(indexHtml.includes('avOekOxO2TkOFZAlL7kIVcFgci9fvDElJdopjKVcps8'), "Missing exact Google verification token");
   });
 
   console.log(`\nVerification complete: ${passed} passed, ${failed} failed.\n`);
