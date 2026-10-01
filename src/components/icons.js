@@ -1,0 +1,262 @@
+/**
+ * SVG Icons and Bespoke Vector Artwork for Oye Chilli
+ * Lightweight, zero-dependency, accessible SVGs.
+ */
+
+export const icons = {
+  // Brand Chilli Logo
+  chilli: (className = "brand-logo-icon") => `
+    <svg class="${className}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Chilli Stem -->
+      <path d="M17 3C17 3 18.5 6 15.5 8C14.5 8.7 13.2 9.1 12 9.5" stroke="#15803D" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Chilli Body -->
+      <path d="M12.5 9.5C14.8 9.2 18.2 10.1 20 12.5C22.5 15.8 21.5 21.2 18.5 25C15.8 28.5 11.2 30 9.5 29.5C8.8 29.3 8.6 28.5 9 27.9C10.8 25.2 12.2 21.5 12.5 18C12.8 14.5 11.8 11.5 12.5 9.5Z" fill="#D93829"/>
+      <!-- Subtle highlight curve -->
+      <path d="M14 13C15.5 14.2 16.8 16.5 16.5 19.5" stroke="#F87171" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 3"/>
+    </svg>
+  `,
+
+  // External Link Icon
+  externalLink: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M15 3h4v4"/>
+      <path d="M10 10l9-9"/>
+      <path d="M16 11v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/>
+    </svg>
+  `,
+
+  // Google Play Icon
+  googlePlay: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3.609 1.814L13.793 12 3.61 22.186c-.378-.328-.61-.83-.61-1.428V3.242c0-.598.232-1.1.61-1.428zm11.29 11.29l2.482 2.482-12.213 7.051 9.731-9.533zm0-2.208L5.168 1.363l12.213 7.051-2.482 2.482zm1.488 1.104l3.755 2.168c1.077.622 1.077 1.636 0 2.258l-3.755 2.168-2.128-2.128 2.128-2.466z"/>
+    </svg>
+  `,
+
+  // Mail Icon
+  mail: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="2" y="4" width="20" height="16" rx="3"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </svg>
+  `,
+
+  // Location Pin Icon
+  mapPin: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </svg>
+  `,
+
+  // Shield / Legal Icon
+  shield: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </svg>
+  `,
+
+  // Document Icon
+  document: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <path d="M14 2v6h6"/>
+      <line x1="16" y1="13" x2="8" y2="13"/>
+      <line x1="16" y1="17" x2="8" y2="17"/>
+      <line x1="10" y1="9" x2="8" y2="9"/>
+    </svg>
+  `,
+
+  // Sparkles / Delight Icon
+  sparkle: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+    </svg>
+  `,
+
+  // Heart / Care Icon
+  heart: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+    </svg>
+  `,
+
+  // Lock / Privacy Icon
+  lock: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+    </svg>
+  `,
+
+  // Arrow Right
+  arrowRight: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="4" y1="10" x2="16" y2="10"/>
+      <polyline points="10 4 16 10 10 16"/>
+    </svg>
+  `,
+
+  // Menu Hamburger
+  menu: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  `,
+
+  // Close / Cross
+  close: (className = "btn-icon") => `
+    <svg class="${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  `
+};
+
+/**
+ * Bespoke Product Illustrations
+ * Tasteful, lightweight, purely vector representations that convey the product spirit
+ * without fabricating UI screenshots.
+ */
+export const productIllustrations = {
+  // Natkhat: Baby keepsakes, themed milestone photo frames, playful delight
+  natkhat: () => `
+    <svg class="product-art-svg" viewBox="0 0 340 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Natkhat baby photo keepsakes illustration">
+      <rect width="340" height="180" fill="#FFF7F5"/>
+      <!-- Soft background decorative bubbles -->
+      <circle cx="60" cy="50" r="32" fill="#FEE2E2" opacity="0.6"/>
+      <circle cx="280" cy="130" r="40" fill="#FEF3C7" opacity="0.5"/>
+      <circle cx="300" cy="45" r="16" fill="#FEE2E2" opacity="0.7"/>
+
+      <!-- Keepsake Photo Frame -->
+      <g filter="drop-shadow(0 4px 12px rgba(224, 90, 71, 0.12))">
+        <!-- Main Photo Card -->
+        <rect x="105" y="24" width="130" height="132" rx="14" fill="#FFFFFF" stroke="#FCD7D0" stroke-width="2"/>
+        <!-- Inner Photo Area -->
+        <rect x="117" y="36" width="106" height="88" rx="8" fill="#FFF1EE"/>
+        <!-- Cute baby bonnet / milestone sticker motif inside frame -->
+        <circle cx="170" cy="74" r="22" fill="#FCA5A5" opacity="0.3"/>
+        <circle cx="170" cy="72" r="15" fill="#E05A47"/>
+        <!-- Smiling eyes on motif -->
+        <path d="M164 71C164 71 166 73 168 71" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M172 71C172 71 174 73 176 71" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Tiny milestone crown/star on top -->
+        <path d="M170 48L172.5 53.5L178 54L174 57.5L175 63L170 60L165 63L166 57.5L162 54L167.5 53.5L170 48Z" fill="#F59E0B"/>
+        <!-- Bottom caption bar / milestone label -->
+        <rect x="128" y="133" width="84" height="10" rx="5" fill="#F5ECE9"/>
+        <rect x="146" y="135" width="48" height="6" rx="3" fill="#E05A47" opacity="0.5"/>
+      </g>
+
+      <!-- Whimsical floating stars & sparkle stickers -->
+      <g transform="translate(68, 85)">
+        <circle cx="12" cy="12" r="12" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1.5"/>
+        <path d="M12 6L13.5 10.5L18 12L13.5 13.5L12 18L10.5 13.5L6 12L10.5 10.5L12 6Z" fill="#D97706"/>
+      </g>
+      <g transform="translate(245, 70)">
+        <circle cx="14" cy="14" r="14" fill="#FEE2E2" stroke="#FECACA" stroke-width="1.5"/>
+        <path d="M14 9C12.5 7.5 10 7.5 8.5 9C7 10.5 7 13 8.5 14.5L14 20L19.5 14.5C21 13 21 10.5 19.5 9C18 7.5 15.5 7.5 14 9Z" fill="#E05A47"/>
+      </g>
+    </svg>
+  `,
+
+  // huhu!: Playful Hindi crossword & word puzzle game
+  huhu: () => `
+    <svg class="product-art-svg" viewBox="0 0 340 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="huhu! Hindi word puzzle game illustration">
+      <rect width="340" height="180" fill="#FFFBEB"/>
+      <!-- Soft puzzle backdrop hints -->
+      <circle cx="70" cy="120" r="36" fill="#FEF3C7" opacity="0.6"/>
+      <circle cx="280" cy="50" r="32" fill="#FDE68A" opacity="0.4"/>
+
+      <!-- Crossword Tile Grid -->
+      <g filter="drop-shadow(0 4px 12px rgba(217, 119, 6, 0.12))">
+        <!-- Tile 1: Top (ह) -->
+        <rect x="146" y="24" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#FCD34D" stroke-width="2"/>
+        <text x="170" y="56" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#B45309" text-anchor="middle">ह</text>
+
+        <!-- Tile 2: Left (श) -->
+        <rect x="94" y="76" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+        <text x="118" y="108" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#D97706" text-anchor="middle">श</text>
+
+        <!-- Tile 3: Center intersection (ब) - Highlighted! -->
+        <rect x="146" y="76" width="48" height="48" rx="10" fill="#D97706" stroke="#B45309" stroke-width="2"/>
+        <text x="170" y="108" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">ब</text>
+
+        <!-- Tile 4: Right (द) -->
+        <rect x="198" y="76" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+        <text x="222" y="108" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#D97706" text-anchor="middle">द</text>
+
+        <!-- Tile 5: Bottom (ल) -->
+        <rect x="146" y="128" width="48" height="48" rx="10" fill="#FFFFFF" stroke="#FCD34D" stroke-width="2"/>
+        <text x="170" y="159" font-family="-apple-system, sans-serif" font-size="22" font-weight="700" fill="#B45309" text-anchor="middle">ल</text>
+      </g>
+
+      <!-- Little exclamation mark badge for huhu! -->
+      <g transform="translate(254, 88)">
+        <circle cx="16" cy="16" r="16" fill="#D97706"/>
+        <text x="16" y="24" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">!</text>
+      </g>
+    </svg>
+  `,
+
+  // Pickal: Client photo gallery tool for photographers
+  pickal: () => `
+    <svg class="product-art-svg" viewBox="0 0 340 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pickal photographer client gallery tool illustration">
+      <rect width="340" height="180" fill="#F0F7FF"/>
+      <!-- Soft decorative photography backdrop -->
+      <circle cx="50" cy="50" r="30" fill="#DBEAFE" opacity="0.6"/>
+      <circle cx="290" cy="120" r="36" fill="#E0E7FF" opacity="0.5"/>
+
+      <!-- Stacked Gallery Cards & Selection Interface -->
+      <g filter="drop-shadow(0 4px 14px rgba(37, 99, 235, 0.12))">
+        <!-- Back Card (Tilted) -->
+        <g transform="rotate(-6 140 100)">
+          <rect x="90" y="44" width="105" height="110" rx="10" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="2"/>
+          <rect x="98" y="52" width="89" height="74" rx="6" fill="#EFF6FF"/>
+          <!-- Landscape silhouette in back photo -->
+          <path d="M102 118L122 96L142 110L162 90L183 118Z" fill="#BFDBFE"/>
+        </g>
+
+        <!-- Front Card (Hero Photo) -->
+        <g transform="rotate(4 200 100)">
+          <rect x="145" y="36" width="112" height="118" rx="10" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+          <rect x="153" y="44" width="96" height="82" rx="6" fill="#DBEAFE"/>
+          <!-- Sun / aperture circle -->
+          <circle cx="178" cy="66" r="10" fill="#3B82F6" opacity="0.3"/>
+          <circle cx="178" cy="66" r="6" fill="#2563EB"/>
+          <!-- Mountains / photo silhouette -->
+          <path d="M158 120L185 88L205 106L222 84L245 120Z" fill="#60A5FA"/>
+
+          <!-- Selected Checkmark / Client Favourite Heart Badge -->
+          <circle cx="236" cy="50" r="13" fill="#2563EB"/>
+          <path d="M231 50L234.5 53.5L241.5 46.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+
+      <!-- Minimalist camera lens element on left -->
+      <g transform="translate(48, 88)">
+        <rect x="0" y="0" width="34" height="26" rx="6" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.8"/>
+        <circle cx="17" cy="13" r="6.5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.8"/>
+      </g>
+    </svg>
+  `,
+
+  // 404 Error Art: Charming chilli with a question mark
+  error404: () => `
+    <svg class="error-art" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Page not found illustration">
+      <circle cx="70" cy="70" r="64" fill="#FDF1EE" stroke="#F7CBC4" stroke-width="2"/>
+      <!-- Chilli Stem -->
+      <path d="M68 28C68 28 72 35 65 40C62.5 41.8 59.5 42.8 56.5 43.5" stroke="#15803D" stroke-width="4" stroke-linecap="round"/>
+      <!-- Chilli Body (Waving/Perplexed) -->
+      <path d="M58 44C64 43 73 45 77 51C83 60 80 73 72 82C65 90 53 94 49 93C47 92.5 46.5 90.5 47.5 89C52 82 55 73 56 64C57 56 55 49 58 44Z" fill="#D93829"/>
+      <!-- Playful Eyes -->
+      <circle cx="68" cy="56" r="2.5" fill="#FFFFFF"/>
+      <circle cx="74" cy="58" r="2.5" fill="#FFFFFF"/>
+      <!-- Question mark hovering -->
+      <g transform="translate(86, 32)">
+        <circle cx="18" cy="18" r="18" fill="#FFFFFF" stroke="#E8E2D9" stroke-width="2"/>
+        <text x="18" y="25" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" fill="#D93829" text-anchor="middle">?</text>
+      </g>
+    </svg>
+  `
+};
